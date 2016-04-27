@@ -1,22 +1,19 @@
 package com.thoughtworks.tw101.biblioteca;
 
-import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by andreang on 4/26/16.
- */
 public class Library {
-    private List<String> bookList;
+    private List<Book> bookList;
 
-    public Library(List<String> bookList){
-            this.bookList = bookList;
+    public Library(List<Book> bookList){
+
+        this.bookList = bookList;
     }
 
-    public String returnBookList() {
+    public String bookDetails() {
         String bookListString = "";
-        for(String bookTitle : bookList) {
-            bookListString += bookTitle + "\n";
+        for(Book book : bookList) {
+            bookListString += book.details() + "\n";
         }
         return bookListString;
     }

@@ -10,13 +10,10 @@ import static org.mockito.Matchers.contains;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
-/**
- * Created by andreang on 4/26/16.
- */
 public class ApplicationTest {
     @Test
     public void shouldWelcomeWhenStarting(){
-        Library library = new Library(new ArrayList<String>());
+        Library library = new Library(new ArrayList<Book>());
         PrintStream printStream = mock(PrintStream.class);
         Application application = new Application(printStream, library);
 

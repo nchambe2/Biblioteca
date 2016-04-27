@@ -16,6 +16,6 @@ public class Application {
 
     public void start() {
         printStream.println("Welcome to Biblioteca!");
-        printStream.println(library.returnBookList());
+        printStream.println(library.bookDetails());
     }
 }
